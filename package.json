@@ -1,0 +1,23 @@
+{
+  "name": "persida",
+  "version": "1.0.0",
+  "description": "Done in AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daliDeli/word-counter-angularjs.git"
+  },
+  "keywords": [],
+  "author": "Dalibor Delipara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daliDeli/word-counter-angularjs/issues"
+  },
+  "homepage": "https://github.com/daliDeli/word-counter-angularjs#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
