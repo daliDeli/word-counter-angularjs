@@ -1,0 +1,10 @@
+#app{
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+textarea, input, button{
+  display: block;
+  margin: 5px auto;
+  padding: 5px;
+}
