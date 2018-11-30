@@ -9,7 +9,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
 <body ng-app="WordCounter">
-  <main ng-include="'main.html'"></main>
+  <div ng-controller="MainController" id="app">
+    <textarea 
+      ng-model="sentence"
+      ng-disabled="sentenceIsSubmited"
+      name="sentence"
+      cols="30"
+      rows="10"
+      placeholder="Write your sentence ...">
+    </textarea>
+    <button ng-click="submitSentence()">Submit Sentence</button>
+  
+    <input ng-model="word" ng-disabled="!sentenceIsSubmited" type="text" placeholder="Write your word ...">
+    <button ng-click="calculateRepetition()" ng-disabled="!sentenceIsSubmited">Calculate Repetition</button>
+  
+    <button ng-click="restart()" ng-disabled="!sentenceIsSubmited">Restart</button>
+  
+    <p ng-if="wordIsSubmited">{{ result }}</p>
+  </div>
 
   <script type="text/javascript" src="js/app.js"></script>  
   <script src="js/controllers/MainController.js"></script>  
